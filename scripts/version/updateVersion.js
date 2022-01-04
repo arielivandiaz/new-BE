@@ -2,7 +2,7 @@
 
 var fs = require('fs');
 
-const file_path_1 = 'version/version.json';
+const file_path_1 = 'scripts/version/version.json';
 const file_path_2 = 'package.json';
 
 
