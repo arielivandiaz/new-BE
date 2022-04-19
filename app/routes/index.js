@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var sql = require('../controllers/sql');
+var sql = require('../services/sql');
 var api = require('../controllers/api');
 
 

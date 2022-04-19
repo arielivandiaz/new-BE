@@ -1,12 +1,9 @@
 
-var sql = require('./sql');
+var sql = require('../services/sql');
 var machine = require('os').hostname;
 var name = machine();
 
-const errorPrinter = (e) => {
-    console.log("error");
 
-}
 const main = async (req, res) => {
     try {
         const str = "SELECT * FROM `test_table` WHERE `name`='" + name + "';";

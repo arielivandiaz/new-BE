@@ -8,13 +8,12 @@ var app = require('../app');
 var debug = require('debug')('node-templates:server');
 var http = require('http');
 
-const params = require('../app/config/global');
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || params.port);
+var port = normalizePort(process.env.PORT );
 app.set('port', port);
 
 /**

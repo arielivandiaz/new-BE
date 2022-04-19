@@ -1,0 +1,2 @@
+PORT=4747
+DB_SQL={"connection": {"host": "localhost","user":"root","password": "","database": "test2"}}

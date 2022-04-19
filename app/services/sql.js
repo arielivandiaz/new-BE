@@ -1,11 +1,10 @@
 var mysql = require('mysql');
-var dbconfig = require('../config/db');
-
 
 var connection = {};
 
 let handleDisconnect = () => {
-    connection = mysql.createConnection(dbconfig.connection);
+    
+    connection = mysql.createConnection(JSON.parse(process.env.DB_SQL).connection);
     connection.connect(onConnect = (err) => {
         if (err) {
             console.log('error when connecting to db:', err);
